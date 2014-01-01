@@ -1,5 +1,5 @@
 ;;;; Author: Christopher Segale
-;;;; Date: 12/27/2013
+;;;; Date: 01/01/2014
 
 (defun packed (sequence)
   (let ((packed-list '()) (prev-elem nil))
@@ -10,4 +10,4 @@
           (push '() packed-list)
           (push elem (car packed-list))
           (setf prev-elem elem))))
-    (return-from packed (reverse packed-list))))
+    (reverse packed-list)))

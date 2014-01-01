@@ -1,5 +1,5 @@
 ;;;; Author: Christopher Segale
-;;;; Date: 12/31/2013
+;;;; Date: 01/01/2014
 
 (defmacro modulop (number divisor)
   `(= (mod ,number ,divisor) 0))
@@ -11,4 +11,4 @@
       (if (modulop (1+ n) place)
         nil
         (push (elt sequence n) drop-list)))
-    (return-from drop (reverse drop-list))))
+    (reverse drop-list)))

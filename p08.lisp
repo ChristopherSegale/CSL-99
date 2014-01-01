@@ -1,5 +1,5 @@
 ;;;; Author: Christopher Segale
-;;;; Date: 12/27/2013
+;;;; Date: 01/01/2014
 
 (defun compress (sequence)
   (let ((compressed-list '()) (prev-elem nil))
@@ -9,4 +9,4 @@
         (progn
           (push elem compressed-list)
           (setf prev-elem elem))))
-    (return-from compress (reverse compressed-list))))
+    (reverse compressed-list)))

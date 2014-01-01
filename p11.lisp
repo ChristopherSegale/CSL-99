@@ -1,5 +1,5 @@
 ;;;; Author: Christopher Segale
-;;;; Date: 12/30/2013
+;;;; Date: 01/01/2014
 
 (defun encode-modified (sequence)
   (let ((encoded-list '()) (count 1) (prev-elem nil))
@@ -13,4 +13,4 @@
           (push elem (car encoded-list))
           (push count (car encoded-list))
           (setf prev-elem elem))))
-    (return-from encode-modified (reverse encoded-list))))
+    (reverse encoded-list)))
