@@ -2,7 +2,7 @@
 ;;;; Date: 01/01/2014
 
 (defun range (n k)
-  (if (not (and (numberp n) (numberp k)))
+  (if (notevery #'numberp (list n k))
     nil
     (if (= n k)
       (list n)
