@@ -7,7 +7,7 @@
       nil
       (progn 
         (dotimes (n item-number)
-          (setf rand-position (random (1- (length sequence))))
+          (setf rand-position (random (length sequence)))
           (if (find rand-position used-positions)
             (decf n)
             (progn
